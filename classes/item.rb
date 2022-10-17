@@ -16,3 +16,12 @@ class Item
  ( Time.new.year - @publish_date ) > 10
   end
 end
+
+  def move_to_archive
+    @archived = true if can_be_archived?
+  end
+
+  private
+
+  attr_reader :id
+end
