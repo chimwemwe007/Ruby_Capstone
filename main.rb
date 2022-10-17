@@ -1,4 +1,3 @@
-# prepare options here
 @options = [
   '1: List all books',
   '2: List all labels',
@@ -36,7 +35,7 @@ def select_option(input)
     puts 'Wrong input!'
   end
 end
-  
+
 def main()
   input = gets.chomp.to_i
   select_option(input)
