@@ -11,7 +11,7 @@ class Genre
 
   def add_item(album)
     @items << album
-    album.genre = self    
+    album.genre = self
   end
 
   private
