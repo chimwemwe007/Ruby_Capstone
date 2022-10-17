@@ -22,6 +22,6 @@ end
   end
 
   private
-
   attr_reader :id
 end
+
