@@ -37,5 +37,9 @@ def select_option(input)
   end
 end
   
+def main()
+  input = gets.chomp.to_i
+  select_option(input)
+end
 
-
+main
