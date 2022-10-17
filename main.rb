@@ -12,4 +12,30 @@
   '10: Exit'
 ]
 
+def select_option(input)
+  case input
+  when 1
+    # call method to list books
+  when 2
+    # call method to list labels
+  when 3
+    # call method to add book
+  when 4
+    # call method to list albums
+  when 5
+    # call method to list genres
+  when 7
+    # call method to list games
+  when 8
+    # call method to list authors
+  when 9
+    # call method to add game
+  when 10
+    Exit
+  else
+    puts 'Wrong input!'
+  end
+end
+  
+
 
