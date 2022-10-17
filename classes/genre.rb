@@ -9,8 +9,9 @@ class Genre
     @items = []
   end
 
-  
-
+  def add_item(album)
+    @items << album
+    album.genre = self    
   end
 
   private
