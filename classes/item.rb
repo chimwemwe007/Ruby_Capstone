@@ -7,7 +7,12 @@ class Item
     @author = author
     @source = source
     @label = label
-    @publish_date = date
+    @publish_date = publish_date
     @archived = archived
+  end
+
+  private
+  def can_be_archived?
+ ( Time.new.year - @publish_date ) > 10
   end
 end
