@@ -15,6 +15,7 @@ class Genre
   end
 
   private
+  
 
   attr_reader :id, :items
 end
