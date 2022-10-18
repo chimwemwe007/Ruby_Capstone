@@ -14,7 +14,7 @@ class Genre
     album.genre = self
   end
 
-  private  
+  private
 
   attr_reader :id, :items
 end
