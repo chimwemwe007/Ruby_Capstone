@@ -14,7 +14,7 @@ class Genre
     album.add_genre = self
   end
 
-  private  
+  private
 
   attr_accessor :id, :items
 end
