@@ -1,3 +1,7 @@
+require_relative './app'
+
+@app = App.new
+
 @options = [
   '1: List all books',
   '2: List all labels',
@@ -25,10 +29,13 @@ def select_option(input)
     # call method to list genres
   when 7
     # call method to list games
+    @app.list_games
   when 8
     # call method to list authors
+    @app.list_authors
   when 9
     # call method to add game
+    @app.add_game
   when 10
     Exit
   else
@@ -37,6 +44,11 @@ def select_option(input)
 end
 
 def main()
+  # temp
+  @options.each do |item|
+    puts item
+  end
+  # temp
   input = gets.chomp.to_i
   select_option(input)
 end
