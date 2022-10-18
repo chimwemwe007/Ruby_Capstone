@@ -11,10 +11,10 @@ class Genre
 
   def add_item(album)
     @items << album
-    album.genre = self
+    album.add_genre = self
   end
 
-  private
+  private  
 
   attr_reader :id, :items
 end
