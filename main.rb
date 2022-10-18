@@ -37,6 +37,9 @@ def select_option(input)
 end
 
 def main()
+  @options.each do |item|
+    puts item
+  end
   input = gets.chomp.to_i
   select_option(input)
 end
