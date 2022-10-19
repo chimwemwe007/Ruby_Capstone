@@ -1,7 +1,9 @@
 CREATE TABLE music_albums(
   id INT GENERATED ALWAYS AS IDENTITY,
   on_spotify BOOLEAN,
-  FOREIGN KEY(id) REFERENCES item(id)
+  FOREIGN KEY(id) REFERENCES genres(id),
+  publish_date DATE,
+  archived BOOLEAN
 );
 
 CREATE TABLE genres(
