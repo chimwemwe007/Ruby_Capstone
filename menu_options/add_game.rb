@@ -28,7 +28,8 @@ def add_game
 
 
   # create the game
-  
+  game = Game.new(publish_date, multiplayer, last_played_at)
+  @games.push(game)
 
 
 
