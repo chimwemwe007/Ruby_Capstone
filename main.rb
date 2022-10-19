@@ -1,4 +1,5 @@
-require_relative './app'
+require_relative 'app'
+require_relative './menu_options/add_game'
 
 @app = App.new
 
@@ -33,15 +34,18 @@ def select_option(input)
     # call method to list genres
   when 7
     # call method to list games
-    @app.list_games
+    # @app.list_games
   when 8
-    # call method to list authors
-    @app.list_authors
+  # call method to list authors
+
   when 9
-    # call method to add game
-    @app.add_game
+    # @app.list_authors
+
   when 10
-    Exit
+    # call method to add game
+    add_game
+  when 11
+    exit
   else
     puts 'Wrong input!'
   end
