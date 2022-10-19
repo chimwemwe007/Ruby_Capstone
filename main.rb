@@ -9,10 +9,14 @@ require_relative './app'
   '4: List all music albums',
   '5: List all genres',
   '6: Add a music album',
+  # below
   '7: List all games',
+  # below
   '8: List all authors',
-  '9: Add a game',
-  '10: Exit'
+  '9: List all sources',
+  # and below
+  '10: Add a game',
+  '11: Exit'
 ]
 
 def select_option(input)

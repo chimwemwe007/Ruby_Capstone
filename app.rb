@@ -1,4 +1,5 @@
 require_relative './classes/game'
+require_relative './menu_optins/add_game'
 
 class App
   attr_accessor :games
@@ -15,7 +16,7 @@ class App
     puts 'list authors'
   end
 
-  def add_game
-    puts 'add a game'
-  end
+  # def add_game
+  #   puts 'add a game'
+  # end
 end
