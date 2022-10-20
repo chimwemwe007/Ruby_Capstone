@@ -37,7 +37,7 @@ class App
       puts 'look at all the genres'
       run
     when 6
-      puts 'give some albums'
+      puts 'add_an_album'
       run
     when 7
       list_games

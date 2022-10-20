@@ -15,7 +15,6 @@ describe Genre do
     it 'Test genre attributes?' do
       genre = Genre.new('jazz')
       expect(genre.name).to eq 'jazz'
-      expect(genre.items).to eq []
     end
   end
 end
