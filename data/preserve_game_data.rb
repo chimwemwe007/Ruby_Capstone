@@ -28,7 +28,7 @@ def load_author
     if file.size.zero?
       'There is nothing saved yet.'
     else
-      author = JSON.parse(File.read('./data/authors.json'))
+      authors = JSON.parse(File.read('./data/authors.json'))
 
       authors.each do |author|
         author = Author.new(author['first_name'], author['last_name'])
