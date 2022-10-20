@@ -3,6 +3,7 @@ require_relative './menu_options/add_game'
 require_relative 'menu'
 require_relative './menu_options/list_games'
 require_relative './menu_options/list_authors'
+require_relative './data/preserve_game_data'
 
 class App
   attr_accessor :games
@@ -11,6 +12,11 @@ class App
     @games = []
     @authors = []
     @menu = Menu.new
+  end
+
+  def load_data
+    load_games
+    load_author
   end
 
   def run
