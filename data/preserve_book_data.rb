@@ -58,32 +58,28 @@ def save_book(publish_date, publisher, cover_state)
 
     file.close
 
-    File.open('./data/books.json', 'w') do |f|
-      f.write(JSON.pretty_generate(book))
-    end
+    File.write('./data/books.json', JSON.pretty_generate(book))
   end
 end
 
-  def save_label(title, color)
-    obj = {
-      title: title,
-      color: color
-    }
+def save_label(title, color)
+  obj = {
+    title: title,
+    color: color
+  }
 
-    if File.exist?('./data/labels.json')
-      file = File.open('./data/labels.json')
+  if File.exist?('./data/labels.json')
+    file = File.open('./data/labels.json')
 
-      if file.size.zero?
-        label = [obj]
-      else
-        label = JSON.parse(File.read('./data/labels.json'))
-        label << obj
-      end
-
-      file.close
-
-      File.open('./data/labels.json', 'w') do |f|
-        f.write(JSON.pretty_generate(label))
-      end
+    if file.size.zero?
+      label = [obj]
+    else
+      label = JSON.parse(File.read('./data/labels.json'))
+      label << obj
     end
+
+    file.close
+
+    File.write('./data/labels.json', JSON.pretty_generate(label))
   end
+end
