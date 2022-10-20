@@ -1,9 +1,12 @@
 require_relative '../classes/game'
 require_relative '../classes/author'
 require_relative '../app'
+require_relative '../menu'
 
 @games = []
 @authors = []
+@menu = Menu.new
+# @app = App.new
 
 def add_game
   # get the values for author
@@ -35,8 +38,8 @@ def add_game
   game = Game.new(publish_date, multiplayer, last_played_at)
   @games.push(game)
 
-  # create the author using games id
-  # i think i don't need id for author
+  # create the author
   author = Author.new(first_name, last_name)
   @authors.push(author)
+  
 end
