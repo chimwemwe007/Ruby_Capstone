@@ -10,7 +10,7 @@ def load_games
     if file.size.zero?
       'There is nothing saved yet.'
     else
-      games = JSON.parse(File.read('./data/books.json'))
+      games = JSON.parse(File.read('./data/games.json'))
 
       games.each do |game|
         game = Game.new(game['publish_date'], game['multiplayer'], game['last_played_at'])
@@ -46,8 +46,8 @@ def save_game(publish_date, multiplayer, last_played_at)
     last_played_at: last_played_at
   }
 
-  if File.exist?('./data/game.json')
-    file = File.open('./data/game.json')
+  if File.exist?('./data/games.json')
+    file = File.open('./data/games.json')
 
     if file.size.zero?
       game = [obj]
