@@ -42,15 +42,12 @@ class App
     when 3
       puts 'gonna add a book'
       run
-
     when 4
       puts 'here are the albums'
       run
-
     when 5
       puts 'look at all the genres'
       run
-
     when 6
       puts 'give some albums'
       run
@@ -74,6 +71,3 @@ class App
     end
   end
 end
-
-
-

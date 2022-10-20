@@ -4,7 +4,6 @@ require_relative 'menu'
 
 def main()
   app = App.new
-  menu = Menu.new
   puts 'Catalog of my things'
   app.run
 end

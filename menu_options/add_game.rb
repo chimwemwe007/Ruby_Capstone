@@ -30,8 +30,6 @@ def add_game
   end
 
   puts 'What is the last played date? [YYYY-MM-DD]'
-  # date_input = gets.chomp
-  # last_played_at = DateTime.parse(date_input).to_date
   last_played_at = DateTime.parse(gets.chomp).to_date
 
   # create the game
@@ -41,5 +39,4 @@ def add_game
   # create the author
   author = Author.new(first_name, last_name)
   @authors.push(author)
-  
 end
