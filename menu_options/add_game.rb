@@ -1,6 +1,7 @@
 require_relative '../classes/game'
 require_relative '../classes/author'
 require_relative '../menu'
+require_relative '../data/preserve_game_data'
 
 @games = []
 @authors = []
@@ -33,10 +34,12 @@ def add_game
   # create the game
   game = Game.new(publish_date, multiplayer, last_played_at)
   @games.push(game)
+  save_game(publish_date, multiplayer, last_played_at)
 
   # create the author
   author = Author.new(first_name, last_name)
   @authors.push(author)
+  save_author(first_name, last_name)
 
   puts 'BOOK AND AUTHOR CREATED'
 end
