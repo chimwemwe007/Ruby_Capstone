@@ -35,3 +35,9 @@ CREATE TABLE game(
   last_played_at DATE NOT NULL,
   FOREIGN KEY (item_id) REFERENCES item (id)
 );
+
+CREATE TABLE author(
+  id INTEGER PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+  first_name VARCHAR(255) NOT NULL,
+  last_name VARCHAR(255) NOT NULL
+);
