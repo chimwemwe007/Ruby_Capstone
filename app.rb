@@ -2,6 +2,7 @@ require_relative './classes/game'
 require_relative './menu_options/add_game'
 require_relative 'menu'
 require_relative './menu_options/list_games'
+require_relative './menu_options/list_authors'
 
 class App
   attr_accessor :games
@@ -10,13 +11,6 @@ class App
     @games = []
     @authors = []
     @menu = Menu.new
-  end
-
-  def list_authors
-    puts 'AUTHORS'
-    @authors.each do |author|
-      puts "First Name: #{author.first_name}, Last Name: #{author.last_name}"
-    end
   end
 
   def run
@@ -49,7 +43,7 @@ class App
       list_games
       run
     when 8
-      puts 'do you know these authors?'
+      list_authors
       run
     when 9
       puts 'what is your source'
