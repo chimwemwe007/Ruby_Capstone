@@ -21,23 +21,23 @@ def load_games
   end
 end
 
-# def load_author
-#   if File.exist?('./data/authors.json')
-#     file = File.open('./data/authors.json')
+def load_author
+  if File.exist?('./data/authors.json')
+    file = File.open('./data/authors.json')
 
-#     if file.size.zero?
-#       'There is nothing saved yet.'
-#     else
-#       author = JSON.parse(File.read('./data/authors.json'))
+    if file.size.zero?
+      'There is nothing saved yet.'
+    else
+      author = JSON.parse(File.read('./data/authors.json'))
 
-#       authors.each do |author|
-#         author = Author.new(author['first_name'], author['last_name'])
-#         @authors << author
-#       end
-#     end
-#     file.close
-#   end
-# end
+      authors.each do |author|
+        author = Author.new(author['first_name'], author['last_name'])
+        @authors << author
+      end
+    end
+    file.close
+  end
+end
 
 # def save_game(publish_date, multiplayer, last_played_at)
 #   obj = {
