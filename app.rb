@@ -1,22 +1,31 @@
 require_relative './classes/game'
+require_relative './classes/book'
 require_relative './menu_options/add_game'
+require_relative './menu_options/add_book'
 require_relative 'menu'
 require_relative './menu_options/list_games'
 require_relative './menu_options/list_authors'
+require_relative './menu_options/list_books'
+require_relative './menu_options/list_labels'
 require_relative './data/preserve_game_data'
+require_relative './data/preserve_book_data'
 
 class App
-  attr_accessor :games
+  attr_accessor :games, :books
 
   def initialize
     @games = []
     @authors = []
+    @books = []
+    @labels = []
     @menu = Menu.new
   end
 
   def load_data
     load_games
     load_author
+    load_books
+    load_labels
   end
 
   def run
@@ -28,13 +37,13 @@ class App
   def select_option(input)
     case input
     when 1
-      puts 'listing some books books books'
+      list_books
       run
     when 2
-      puts 'listing some labels'
+      list_labels
       run
     when 3
-      puts 'gonna add a book'
+      add_book
       run
     when 4
       puts 'here are the albums'

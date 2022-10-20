@@ -41,5 +41,5 @@ def add_game
   @authors.push(author)
   save_author(first_name, last_name)
 
-  puts 'BOOK AND AUTHOR CREATED'
+  puts 'GAME AND AUTHOR CREATED'
 end
