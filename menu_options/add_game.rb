@@ -37,4 +37,6 @@ def add_game
   # create the author
   author = Author.new(first_name, last_name)
   @authors.push(author)
+
+  puts 'BOOK AND AUTHOR CREATED'
 end
