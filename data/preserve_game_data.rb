@@ -64,26 +64,26 @@ def save_game(publish_date, multiplayer, last_played_at)
   end
 end
 
-# def save_author(first_name, last_name)
-#   obj = {
-#     first_name: first_name,
-#     last_name: last_name
-#   }
+def save_author(first_name, last_name)
+  obj = {
+    first_name: first_name,
+    last_name: last_name
+  }
 
-#   if File.exist?('./data/authors.json')
-#     file = File.open('./data/authors.json')
+  if File.exist?('./data/authors.json')
+    file = File.open('./data/authors.json')
 
-#     if file.size.zero?
-#       author = [obj]
-#     else
-#       author = JSON.parse(File.read('./data/authors.json'))
-#       author << obj
-#     end
+    if file.size.zero?
+      author = [obj]
+    else
+      author = JSON.parse(File.read('./data/authors.json'))
+      author << obj
+    end
 
-#     file.close
+    file.close
 
-#     myfile = File.open('./data/authors.json', 'w')
-#     myfile.write(JSON.pretty_generate(author))
-#     myfile.close
-#   end
-# end
+    myfile = File.open('./data/authors.json', 'w')
+    myfile.write(JSON.pretty_generate(author))
+    myfile.close
+  end
+end
