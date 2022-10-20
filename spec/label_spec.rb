@@ -2,7 +2,7 @@ require_relative '../classes/label'
 
 describe Label do
   context 'instantiate Label object' do
-    label = Label.new(nil, 'Programming', 'Black')
+    label = Label.new('Programming', 'Black')
 
     it 'should print labels title' do
       expect(label.title).to eq 'Programming'
