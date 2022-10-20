@@ -1,12 +1,10 @@
 require_relative '../classes/game'
 require_relative '../classes/author'
-require_relative '../app'
 require_relative '../menu'
 
 @games = []
 @authors = []
 @menu = Menu.new
-# @app = App.new
 
 def add_game
   # get the values for author

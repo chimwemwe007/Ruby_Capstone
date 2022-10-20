@@ -1,6 +1,7 @@
 require_relative './classes/game'
 require_relative './menu_options/add_game'
 require_relative 'menu'
+require_relative './menu_options/list_games'
 
 class App
   attr_accessor :games
@@ -9,13 +10,6 @@ class App
     @games = []
     @authors = []
     @menu = Menu.new
-  end
-
-  def list_games
-    puts 'GAMES'
-    @games.each do |game|
-      puts "Publish Date: #{game.publish_date}, Multiplayer: #{game.multiplayer}, Last Played: #{game.last_played_at}"
-    end
   end
 
   def list_authors
