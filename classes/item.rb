@@ -18,10 +18,4 @@ class Item
   def can_be_archived?
     (Time.new.year - @publish_date) > 10
   end
-
-  def move_to_archive
-    @archived = true if can_be_archived?
-  end
-
-  attr_reader :id, :archived
 end
