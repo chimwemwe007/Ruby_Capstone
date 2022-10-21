@@ -29,8 +29,7 @@ Kindly modify the files as needed.
 👤 Bengi Genc
 
 - GitHub: [@bengigo](https://github.com/bengigo)
-- Twitter: [@bengi_gb](https://twitter.com/bengi_gb
-)
+- Twitter: [@bengi_gb](https://twitter.com/bengi_gb)
 - LinkedIn: [bengi-genc](https://www.linkedin.com/in/bengigenc/)
 
 👤 Kidist Guta
