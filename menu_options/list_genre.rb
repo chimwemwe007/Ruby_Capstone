@@ -1,6 +1,6 @@
 require_relative '../classes/genre'
 
-@genre= []
+@genre = []
 
 def list_genre
   puts 'GENRE'
