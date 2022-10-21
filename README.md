@@ -4,6 +4,10 @@ This project is a Microverse ruby capstone and is a command line application bui
 
 The user also has the functionality to store all the labels, authors, and genres of the sections of the different items mentioned prior. The data will be stored in the JSON files and can be accessed everytime when the user opens the application.
 
+## Presentation
+- [Presentation Video](https://drive.google.com/file/d/1zCZsu8G_RlYsXIvZuly7bIDhusd5gaOj/view?usp=sharing)
+
+
 ## Built With:
 
 - Ruby
