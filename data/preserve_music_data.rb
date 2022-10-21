@@ -12,9 +12,9 @@ def load_music
     else
       music = JSON.parse(File.read('./data/music_album.json'))
 
-      music.each do |music|
-        music = MusicAlbum.new(music['publish_date'], music['on_spotify'])
-        @music << music
+      music.each do |musics|
+        musics = MusicAlbum.new(musics['publish_date'], musics['on_spotify'])
+        @music << musics
       end
     end
     file.close
