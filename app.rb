@@ -2,22 +2,28 @@ require_relative './classes/game'
 require_relative './classes/book'
 require_relative './menu_options/add_game'
 require_relative './menu_options/add_book'
+require_relative './menu_options/add_music'
 require_relative 'menu'
 require_relative './menu_options/list_games'
 require_relative './menu_options/list_authors'
 require_relative './menu_options/list_books'
 require_relative './menu_options/list_labels'
+require_relative './menu_options/list_music'
+require_relative './menu_options/list_genre'
 require_relative './data/preserve_game_data'
 require_relative './data/preserve_book_data'
+require_relative './data/preserve_music_data'
 
 class App
-  attr_accessor :games, :books
+  attr_accessor :games, :books, :music
 
   def initialize
     @games = []
     @authors = []
     @books = []
     @labels = []
+    @music = []
+    @genre = []
     @menu = Menu.new
   end
 
@@ -26,6 +32,8 @@ class App
     load_author
     load_books
     load_labels
+    load_music
+    load_genre
   end
 
   def run
@@ -46,13 +54,13 @@ class App
       add_book
       run
     when 4
-      puts 'here are the albums'
+      list_music
       run
     when 5
-      puts 'look at all the genres'
+      list_genre
       run
     when 6
-      puts 'add_an_album'
+      add_music_album
       run
     when 7
       list_games
