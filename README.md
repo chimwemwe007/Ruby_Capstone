@@ -1,75 +1,58 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# Ruby Capstone Catalog.
 
-# Project Name
+This project is a Microverse ruby capstone and is a command line application built with Ruby. In this application the user can keep track of their books, games, and music albums. 
 
-> Description the project.
+The user also has the functionality to store all the labels, authors, and genres of the sections of the different items mentioned prior. The data will be stored in the JSON files and can be accessed everytime when the user opens the application.
 
+## Built With:
 
-## Built With
-
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
-
+- Ruby
+- rspec
 
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
+To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
+Make sure you already installed Ruby version 3 or higher and Git.
 
-### Setup
+## Setup
+1. Clone the repository using the below commands.
+git clone https://github.com/chimwemwe007/Ruby_Capstone
 
-### Install
+2. cd Ruby-Catalog
+3. ruby main.rb
 
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+Usage
+Kindly modify the files as needed.
 
 ## Authors
+👤 Bengi Genc
 
-👤 **Author1**
+- GitHub: [@bengigo](https://github.com/bengigo)
+- Twitter: [@bengi_gb](https://twitter.com/bengi_gb
+)
+- LinkedIn: [bengi-genc](https://www.linkedin.com/in/bengigenc/)
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+👤 Kidist Guta
 
-👤 **Author2**
+- GitHub: [@ney2](https://github.com/Ney2)
+- Twitter: [@GutaKidist](https://twitter.com/GutaKidist)
+- LinkedIn: [Kidish-guta](https://www.linkedin.com/in/kidist-guta/)
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+👤 Chimwemwe Mkandawire
+
+- GitHub: [@chimwemwe007](https://github.com/chimwemwe007)
+- Twitter: [@chxmz](https://twitter.com/chxmz)
+- LinkedIn: [chimwemwe-mkandawire](http://www.linkedin.com/in/chimwemwe-mkandawire/)
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome!
+Contributions, [Issues](https://github.com/chimwemwe007/Ruby_Capstone/issues), and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the issues page.
 
 ## Show your support
-
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
 ## 📝 License
-
-This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+This project is [MIT](https://github.com/chimwemwe007/Ruby_Capstone/blob/dev/MIT.md) licensed.
