@@ -15,7 +15,7 @@ def add_music_album
   new_music_album = MusicAlbum.new(publish_date, on_spotify)
   @music.push(new_music_album)
   save_music(new_music_album.publish_date, new_music_album.on_spotify)
-  puts "Enter genre"
+  puts 'Enter genre'
   name = gets.chomp
   new_genre = Genre.new(name)
   @genre.push(new_genre)
